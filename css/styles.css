@@ -10,7 +10,6 @@ body {
   background: linear-gradient(var(--branco), var(--cinza-claro));
 }
 
-
 /*Começo do Cabeçalho*/
 
 /* .cabecalho {
@@ -185,13 +184,16 @@ footer {
   width: 90vw;
 }
 
+.banner-barbearia-main-2 {
+  display: none;
+}
+
 .banner-barbearia-main-container {
   text-align: center;
   margin-top: 0.5rem;
 }
 
 /* Sobre Section */
-
 
 .title-main {
   margin: 0.75rem;
@@ -205,10 +207,6 @@ footer {
   text-align: justify;
 }
 
-.utensilios-barbearia-main {
-  display: none;
-}
-
 .conteudo-paragrafo {
   margin: 0.75rem;
   font-size: 1.0625em;
@@ -218,7 +216,8 @@ footer {
   font-style: italic;
 }
 
-.missao strong, .paragrafo-negrito strong {
+.missao strong,
+.paragrafo-negrito strong {
   font-weight: bold;
 }
 
@@ -241,11 +240,11 @@ footer {
 
 .image-our-services {
   width: 45vw;
-  margin: 0 .5rem 0 .5em;
+  margin: 0 0.5rem 0 0.5em;
 }
 
 .itens-our-services {
-  margin: 0  0 .5rem .5rem;
+  margin: 0 0 0.5rem 0.5rem;
 }
 
 .itens-our-services::before {
@@ -267,4 +266,39 @@ footer {
 .copyright {
   color: var(--branco);
   font-size: 1rem;
+}
+
+/* Para Tablets */
+
+@media screen and (min-width: 768px) {
+  .navbar-header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .navbar-list {
+    border: none;
+    font-size: 1.25em;
+  }
+
+  .banner-barbearia-main {
+    display: none;
+  }
+
+  .banner-barbearia-main-2 {
+    display: block;
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .our-services-conteudo {
+    justify-content: space-around;
+  }
+
+  .video {
+    width: 75vw;
+    margin-bottom: 1rem;
+  }
+
+
 }
