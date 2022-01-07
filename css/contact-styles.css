@@ -1,7 +1,8 @@
 :root {
   --branco: #fefefe;
   --cinza-claro: #888888;
-  --cinza-mais-clarinho: d3d3d3;
+  --cinza-real: #555555;
+  --cinza-mais-clarinho: #d3d3d3;
   --laranja-pastel: #c78c19;
   --preto: #000000;
   --verde-claro: #088c19;
@@ -9,6 +10,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(var(--branco), var(--cinza-claro));
+  box-sizing: border-box;
 }
 
 /* 
@@ -96,7 +98,7 @@ main {
   flex-direction: column;
   align-items: center;
 
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .navbar-list {
@@ -123,6 +125,68 @@ main {
 /* Formulário */
 
 
+.basic-informations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.input-padrao {
+  width: 90vw;
+}
+
+.titles-labels {
+  font-size: 1.25rem;
+  margin: 0.75rem;
+}
+
+/* Meio de Contato */
+
+.how-to-contact-you {
+  display: flex;
+  flex-direction: column;
+  margin: 0.75rem;
+}
+
+.your-time-to-cut {
+  text-align: center;
+  margin: 0.75rem;
+}
+
+/* Botão */
+
+.container-botoes-formulario {
+  display: flex;
+  flex-direction: column;
+  margin: 0.75rem;
+}
+
+.send-form {
+  margin: 0.75rem auto;
+}
+
+/* Tabelinha Horarios */
+
+
+.tabela-horarios {
+  border: 1px solid var(--preto);
+  background-color: var(--branco);
+
+  margin: 0 auto;
+}
+
+thead {
+  background-color: var(--cinza-real);
+  color: var(--branco);
+  font-weight: bold;
+}
+
+td, th {
+  border: 1px solid var(--preto);
+  padding: 8px 15px; 
+}
+
 
 /* Footer */
 
@@ -131,8 +195,8 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  margin-top: 10rem;
+
+  margin-top: 5rem;
 }
 
 .image-logo {
