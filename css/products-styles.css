@@ -93,15 +93,17 @@ body {
 .produtos {
   display: flex;
   flex-direction: column;
-  
-  text-align: center;
+  align-items: center;
 }
 
 .produto-card {
+  text-align: center;
   border: 1px solid var(--preto);
   border-radius: 4%;
 
+  width: 75%;
   margin: 1rem;
+  padding: 0.5rem;
 }
 
 .produtos-card:hover {
@@ -113,7 +115,7 @@ body {
 }
 
 .image-products {
-  width:70%;
+  width:60%;
 }
 
 .title-products {
@@ -139,7 +141,34 @@ footer {
   text-align: center;
 }
 
+.image-logo {
+  width: 10rem;
+}
+
 .copyright {
   color: var(--branco);
   font-size: 1rem;
+}
+
+/* Para Tablets */
+
+@media screen and (min-width: 768px) {
+  .navbar-header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .navbar-list {
+    border: none;
+    font-size: 1.25em;
+  }
+
+  .produtos-container {
+    display: flex;
+  }
+
+  .produto-card {
+    width: 50%;
+  }
+
 }
