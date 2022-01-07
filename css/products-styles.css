@@ -81,7 +81,7 @@ body {
 }
 
 .navbar-list-elements:hover {
-  color: #c78c19;
+  color: var(--laranja-pastel);
 }
 
 .image-logo {
@@ -90,7 +90,47 @@ body {
 
 /* Products */
 
+.produtos {
+  display: flex;
+  flex-direction: column;
+  
+  text-align: center;
+}
 
+.produto-card {
+  border: 1px solid var(--preto);
+  border-radius: 4%;
+
+  margin: 1rem;
+}
+
+.produtos-card:hover {
+  color: var(--laranja-pastel);
+}
+
+.produtos-card:active {
+  border-color: var(--verde-claro);
+}
+
+.image-products {
+  width:70%;
+}
+
+.title-products {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.product-description {
+  font-size: 1.125rem;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+
+  margin: 0.5rem;
+}
 
 /* Footer */
 
