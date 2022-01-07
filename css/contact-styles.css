@@ -1,66 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --branco: #fefefe;
+  --cinza-claro: #888888;
+  --cinza-mais-clarinho: d3d3d3;
+  --laranja-pastel: #c78c19;
+  --preto: #000000;
+  --verde-claro: #088c19;
 }
-
 body {
-  font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(#fefefe, #888888);
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(var(--branco), var(--cinza-claro));
 }
 
-
-/*Começo do Cabeçalho*/
-
-.cabecalho {
-  background-color: #d3d3d3;
-  padding: 20px;
-}
-
-.navbar-header {
-  width: 940px;
-  position: relative;
-  margin: 0 auto;
-}
-
-nav {
-  position: absolute;
-  top: 110px;
-  right: 0;
-}
-
-nav li {
-  display: inline;
-  margin-left: 15px;
-}
-
-nav a {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #000000;
-  font-size: 22px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #c78c19;
-  text-decoration: underline;
-}
-
-/*Fim do Cabeçalho*/
-
-
-footer {
-  text-align: center;
-  background: url("../img/bg2.jpg");
-  padding: 40px 0;
-}
-
-.copyright {
-  color: #ffffff;
-  font-size: 13px;
-  margin-top: 20px;
-}
+/* 
 
 main {
     width: 940px;
@@ -135,4 +86,60 @@ main {
     position: absolute;
     top: 0;
     right: 5%;
+} */
+
+/* Novo Codigo Css */
+
+/* Estilização Header */
+.navbar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 5rem;
+}
+
+.navbar-list {
+  display: flex;
+  border-top: 1px solid var(--preto);
+  border-bottom: 1px solid var(--preto);
+}
+
+.navbar-list-elements {
+  margin: 0.75rem;
+  font-size: 1.075em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar-list-elements:hover {
+  color: var(--laranja-pastel);
+}
+
+.image-logo {
+  width: 10rem;
+}
+
+/* Formulário */
+
+
+
+/* Footer */
+
+footer {
+  background: url(../img/bg2.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin-top: 10rem;
+}
+
+.image-logo {
+  width: 10rem;
+}
+
+.copyright {
+  color: var(--branco);
+  font-size: 1rem;
 }

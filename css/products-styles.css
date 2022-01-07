@@ -11,55 +11,6 @@ body {
   background: linear-gradient(var(--branco), var(--cinza-claro));
 }
 
-/* 
-.produtos {
-  width: 940px;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-
-.produtos li {
-  display: inline-block;
-  text-align: center;
-  width: 30%;
-  vertical-align: top;
-  margin: 0 1.5%;
-  padding: 30px 20px;
-
-  border-radius: 5%;
-  border: 3px solid #000000;
-}
-
-.produtos li:hover {
-  border-color: #c78c19;
-}
-
-.produtos li:active {
-  border-color: #088c19;
-}
-
-.produtos li:hover h2 {
-  font-size: 36px;
-}
-
-.produtos h2 {
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.product-description {
-  font-size: 18px;
-}
-
-.product-price {
-  font-weight: bold;
-  margin-top: 10px;
-}
-
- */
-
-/* Novo Codigo Css */
-
 /* Estilização Header */
 .navbar-header {
   display: flex;
