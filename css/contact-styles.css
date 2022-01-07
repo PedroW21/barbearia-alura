@@ -1,12 +1,13 @@
 :root {
   --branco: #fefefe;
   --cinza-claro: #888888;
-  --cinza-real: #555555;
   --cinza-mais-clarinho: #d3d3d3;
+  --cinza-real: #555555;
   --laranja-pastel: #c78c19;
   --preto: #000000;
   --verde-claro: #088c19;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   background: linear-gradient(var(--branco), var(--cinza-claro));
@@ -93,12 +94,15 @@ main {
 /* Novo Codigo Css */
 
 /* Estilização Header */
+
 .navbar-header {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   margin-bottom: 2rem;
+
+  background-color: var(--cinza-mais-clarinho);
 }
 
 .navbar-list {
@@ -196,7 +200,7 @@ footer {
   flex-direction: column;
   align-items: center;
 
-  margin-top: 5rem;
+  margin-top: 2.5rem;
 }
 
 .image-logo {
@@ -206,4 +210,85 @@ footer {
 .copyright {
   color: var(--branco);
   font-size: 1rem;
+}
+
+/* Tablets */
+
+@media screen and (min-width: 768px) {
+  .navbar-header {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .navbar-list {
+    border: none;
+    font-size: 1.25em;
+  }
+
+  .input-padrao {
+    padding: 1.1em;
+  }
+
+  .social-media{
+    margin-left: 2rem;
+    font-size: 1.25em;
+  }
+
+  .title-social-media-contact {
+    margin: 0.25rem;
+  }
+
+  .your-time-to-cut {
+    margin: 1rem;
+  }
+
+  .container-botoes-formulario {
+    text-align: center;
+
+    margin-top: 1.5rem;
+  }
+
+}
+
+/* Desktops */
+
+@media  screen and (min-width: 1024px){
+
+  .formulario-container
+  {
+    width: 50vw;
+  }  
+
+  .basic-informations {
+    align-items: flex-start;
+    margin: 1rem;
+  }
+  
+  .input-padrao {
+    width: 50vw;
+  }
+
+  .container-botoes-formulario {
+    font-size: 1.25em;
+  }
+
+  .your-time-to-cut {
+    font-size: 1.25em;
+  }
+
+  .send-form {
+    font-size: 1em;
+  }
+
+  .tabela-horarios-container {
+    display: inline-block;
+
+    position: absolute;
+    top: 45%;
+    right: 15%
+  }
+
+  .tabela-horarios {
+    width: 100%;
+  }
 }

@@ -1,7 +1,8 @@
 :root {
   --branco: #fefefe;
   --cinza-claro: #888888;
-  --cinza-mais-clarinho: d3d3d3;
+  --cinza-mais-clarinho: #d3d3d3;
+  --cinza-real: #555555;
   --laranja-pastel: #c78c19;
   --preto: #000000;
   --verde-claro: #088c19;
@@ -16,6 +17,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background-color: var(--cinza-mais-clarinho);
 }
 
 .navbar-list {
