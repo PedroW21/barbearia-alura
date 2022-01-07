@@ -23,6 +23,8 @@ body {
   background-color: var(--cinza-mais-clarinho);
 }
 
+
+
 .navbar-list {
   display: flex;
   border-top: 1px solid var(--preto);
@@ -154,11 +156,23 @@ footer {
   .banner-barbearia-main-2 {
     display: block;
     width: 90vw;
-    margin: 0 auto;
+    margin: 2rem auto;
+    border-radius: 1px solid var(--preto);
+  }
+
+  .our-services {
+    margin: 2rem;
+  }
+
+  .conteudo-about-us {
+    width: 90vw;
+    margin: 2rem auto;
   }
 
   .our-services-conteudo {
     justify-content: space-around;
+    align-items: center;
+
   }
 
   .video {
